@@ -18,10 +18,7 @@ const path = {
 };
 
 function buildStyle() {
-    const plugins = [
-        autoPrefixer(),
-        // cssNano()
-    ];
+    const plugins = [autoPrefixer(), cssNano()];
 
     const { scssSrc, scssDest } = path;
 
