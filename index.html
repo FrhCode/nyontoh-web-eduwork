@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body class="no-transition">
+        <div class="container">
+            <div class="nav">
+                <div class="nav__logo">
+                    <img src="./static/logo3.png" alt="" />
+                </div>
+                <div class="nav__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav__signIn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign in
+                </div>
+                <div class="nav__register">
+                    Register
+                    <span>+</span>
+                </div>
+                <nav class="nav__container">
+                    <ul class="nav__menu nav__menu--main">
+                        <li class="nav__item nav__item--active">Home</li>
+                        <li class="nav__item nav__item--has-sub-menu" id="kelas-menu">
+                            Kelas
+                            <i class="fas fa-caret-right"></i>
+                            <ul class="nav__menu nav__menu--sub" data-sub="kelas-menu">
+                                <li class="nav__item color-main" data-action="backToMainMenu">
+                                    <i class="fas fa-arrow-left"></i>
+                                </li>
+                                <li class="nav__item">Dasar Pemrograman web (free)</li>
+                                <li class="nav__item">Full stack Mern</li>
+                                <li class="nav__item">Full stack Laravel Vue</li>
+                            </ul>
+                        </li>
+                        <li class="nav__item s-1000--d_none">Sign in</li>
+                        <li class="nav__item s-1000--d_none">Register</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="carausel">
+            <div class="carausel__item carausel__item--1">
+                <span class="carausel__main-text">Raih profesi idamanmu, kami bantu sampai diterima kerja</span>
+                <span class="carausel__sub-text">tanpa biaya pendaftaran ! </span>
+                <span class="carausel__cta-btn">Daftar Sekarang</span>
+                <div class="carausel__btn"></div>
+            </div>
+
+            <div class="carausel__item carausel__item--2">
+                <span class="carausel__main-text carausel__main-text--2">Progam Pelatihan & Penyaluran ISA, bayar nanti setelah berhasil dan bisa dicicil x12</span>
+                <span class="carausel__sub-text">tanpa biaya pendaftaran ! </span>
+                <span class="carausel__cta-btn">Daftar Sekarang</span>
+                <div class="carausel__btn"></div>
+            </div>
+
+            <div class="carausel__item carausel__item--3">
+                <span class="carausel__main-text">Apapun Harapanmu disinilah tempat mu</span>
+                <span class="carausel__sub-text">tanpa biaya pendaftaran ! </span>
+                <span class="carausel__cta-btn">Daftar Sekarang</span>
+                <div class="carausel__btn"></div>
+            </div>
+
+            <div class="carausel__item carausel__item--4">
+                <span class="carausel__main-text">Semua Berawal Disini</span>
+                <span class="carausel__sub-text">tanpa biaya pendaftaran ! </span>
+                <span class="carausel__cta-btn">Daftar Sekarang</span>
+                <div class="carausel__btn"></div>
+            </div>
+
+            <!-- <div class="carausel__item">
+                <span class="carausel__main-text carausel__main-text--2">Progam Pelatihan & Penyaluran ISA, bayar nanti setelah berhasil dan bisa dicicil x12</span>
+                <span class="carausel__sub-text">tanpa biaya pendaftaran ! </span>
+                <span class="carausel__cta-btn">Daftar Sekarang</span>
+                <div class="carausel__btn"></div>
+            </div> -->
+
+            <div class="carausel__nav carausel__nav--prev">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="carausel__nav carausel__nav--next">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="carausel__bullet-container"></div>
+        </section>
+
+        <section class="info">
+            <div class="info__item">
+                <div class="info__img">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <div>
+                    <div class="info__title">Apa sih eduwork itu?</div>
+                    <div class="info__text">Platform yang membantu kamu mendapatkan pekerjaan, di bimbing oleh mentor yang akan menjadi teman seperjuanganmu dalam belajar & ber-karir.</div>
+                </div>
+            </div>
+            <div class="info__item">
+                <div class="info__img">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <div>
+                    <div class="info__title">Program ISA</div>
+                    <div class="info__text">Dengan program Income Sharing Agreement, kamu bisa fokus belajar dulu, bayarnya nanti setelah mendapatkan kerja / penghasilan.</div>
+                </div>
+            </div>
+            <div class="info__item">
+                <div class="info__img">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div>
+                    <div class="info__title">Penyaluran kerja</div>
+                    <div class="info__text">Setelah lulus kamu akan dibantu untuk mendapatkan pekerjaan sesuai dengan ilmu yang kalian pelajari.</div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

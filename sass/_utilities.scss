@@ -1,0 +1,9 @@
+.color-main {
+    color: var(--main-color);
+}
+
+.s-1000--d_none {
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
